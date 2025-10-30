@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0i2vwdmtkHDcR8Wd2nwe6Drm7m3dsE0xRlg&s");
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    transition: filter 0.6s ease-in-out;
+    opacity:0.95;
+    z-index: -1;
+}
+h1{
+    margin-top: auto;
+    margin-bottom: auto;;
+}
+.btn{
+    background-color: #DD0303;
+}
