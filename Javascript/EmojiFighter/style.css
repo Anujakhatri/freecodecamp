@@ -1,0 +1,76 @@
+/* Reset & Base layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Title styling */
+h1 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  color: #f28c28;
+  text-shadow: 2px 2px #000;
+  margin: 0;
+  line-height: 1.1;
+  margin-bottom: 60px; /* Space below title */
+}
+
+/* Stage area */
+#stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px; /* Creates visible space between emojis and button */
+}
+
+/* Emoji display area */
+#emojiStage {
+  font-size: 70px;
+  min-height: 100px; /* Keeps empty space before emojis appear */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Button styling */
+#fightButton {
+  background-color: #f28c28;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 14px 28px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px #c46d1f;
+  transition: all 0.2s ease;
+}
+
+#fightButton:hover {
+  background-color: #ff9f45;
+  box-shadow: 0 4px #d17925;
+}
+
+#fightButton:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px #a8561a;
+}
+
+#emojiStage {
+  font-size: 70px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
