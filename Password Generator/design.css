@@ -1,0 +1,153 @@
+/* Full page background */
+body {
+    margin: 0;
+    background: #dceee4;
+    font-family: "Inter", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main generator card */
+.pass-container {
+    background: #1f2937;
+    padding: 55px 60px;
+    width: 650px;;
+    border-radius: 22px;
+    color: white;
+    box-shadow: 0 22px 40px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    gap:28px;
+}
+
+/* Heading */
+.pass-container h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Make the second line green */
+.pass-container h1 br + * {
+    color: #3bdd74;
+}
+
+/* Subtitle */
+.pass-container p {
+    margin-top: 10px;
+    color: #c8d0da;
+    font-size: 15px;
+}
+
+/* Generate button */
+#pass-el {
+    background: #34d27b;
+    color: white;
+    border: none;
+    padding: 14px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 25px;
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.15s ease, background 0.2s;
+}
+
+#pass-el:hover {
+    background: #2bb569;
+    transform: scale(1.03);
+}
+
+/* Password Row Container */
+.passwords {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    margin-top: 22px;
+}
+
+/* Each password box */
+.pass-box {
+    flex: 1;
+    background: #111827;
+    color: #34d27b;
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;            
+    box-sizing: border-box;
+
+    border: 1px solid #1f2937;   /* subtle border */
+}
+
+.pass-box span {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Copy Button */
+.copy-btn {
+    background: transparent;
+    border: none;
+    color: #34d27b;
+    cursor: pointer;
+    font-size: 20px;
+    padding-left: 8px;
+    transition: transform 0.15s ease, color 0.2s;
+}
+
+.copy-btn:hover {
+    color: #3be87e;
+    transform: scale(1.15);
+}
+.green-text{
+    color: #3bdd74;   /* pure bright green */
+    font-weight: 700;  
+}
+.copy-msg {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.copy-msg.show {
+    opacity: 1;
+}
+/* small inline message that fades in/out */
+.copy-msg {
+  margin: 0 0 0 10px;
+  color: #34d27b;
+  font-size: 13px;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 180ms ease, transform 180ms ease;
+  pointer-events: none;
+}
+
+/* visible state */
+.copy-msg.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* keep copy button styling consistent (if not already present) */
+.copy-btn {
+  background: transparent;
+  border: none;
+  color: #34d27b;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 6px;
+}
+.copy-btn:hover { color: #3be87e; transform: scale(1.05); }
+
