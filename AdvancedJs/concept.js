@@ -5,7 +5,7 @@ const message = exerciseTimeMins < 30 ? "You need to try harder!"
     : exerciseTimeMins < 60 ? "Doing Good!"
     : "You're an expert!"
 
-
+//EventLoop
 //setTimeout with params
 //eg:1
 function displayTrafficLight(light){
